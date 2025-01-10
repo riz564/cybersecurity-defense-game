@@ -18,9 +18,25 @@
             color: white;
         }
 
-        h1,
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+            /* Reduced font size for title */
+            margin: 10px 0;
+            /* Smaller margin */
+        }
+
         p {
             text-align: center;
+            font-size: 1.1em;
+            /* Slightly smaller paragraph font size */
+            margin-bottom: 15px;
+        }
+
+        .health {
+            margin: 10px;
+            font-size: 20px;
+            color: white;
         }
 
         /* Game Container */
@@ -37,10 +53,13 @@
 
         .bomb-container {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            /* Ensures equal spacing between bombs */
             width: 100%;
             position: absolute;
             bottom: 10px;
+            padding: 0 10px;
+            /* Prevents bombs from touching the edges */
         }
 
         /* Bomb Styling */
@@ -164,20 +183,49 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            h1 {
+                font-size: 1.6em;
+                /* Smaller font size for h1 */
+                margin: 10px 0;
+                /* Keep a compact margin */
+            }
+
+            /* Adjust paragraph font size */
+            p {
+                font-size: 1em;
+                /* Smaller text for mobile */
+                margin-bottom: 10px;
+            }
+
+            /* Adjust score and health size */
+            .score,
+            .health {
+                font-size: 18px;
+                /* Reduce font size on mobile */
+            }
+
             .game-container {
                 height: 500px;
             }
 
             .bomb-container {
                 flex-direction: row;
-                padding: 10px;
+                padding: 0 20px;
+                /* Extra padding to ensure spacing */
             }
 
             .bomb {
-                width: 50px;
-                height: 50px;
+                width: 35px;
+                height: 35px;
                 line-height: 50px;
-                font-size: 10px;
+                font-size: 7px;
+                display: flex;
+                /* Enable Flexbox */
+                justify-content: center;
+                /* Aligns text horizontally (center) */
+                align-items: center;
+                /* Aligns text vertically (center) */
+                text-align: center;
             }
 
             .explosion {
@@ -186,8 +234,76 @@
             }
 
             .threat {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
+                font-size: 6px;
+                display: flex;
+                /* Enable Flexbox */
+                justify-content: center;
+                /* Aligns text horizontally (center) */
+                align-items: center;
+                /* Aligns text vertically (center) */
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.4em;
+                /* Even smaller for very small screens */
+                margin: 5px 0;
+                /* Smaller margin for compact design */
+            }
+
+            p {
+                font-size: 0.9em;
+                /* Smaller text for very small screens */
+                margin-bottom: 8px;
+                /* Less margin for small screens */
+            }
+
+            .score,
+            .health {
+                font-size: 16px;
+                /* Adjust score/health font size for small devices */
+            }
+
+            .bomb-container {
+                flex-direction: row;
+                padding: 0 20px;
+                /* Extra padding to ensure spacing */
+            }
+
+            .bomb {
+                width: 35px;
+                height: 35px;
+                line-height: 50px;
+                font-size: 7px;
+                display: flex;
+                /* Enable Flexbox */
+                justify-content: center;
+                /* Aligns text horizontally (center) */
+                align-items: center;
+                /* Aligns text vertically (center) */
+                text-align: center;
+            }
+
+            .explosion {
+                width: 100px;
+                height: 100px;
+            }
+
+            .threat {
+                width: 30px;
+                height: 30px;
+                font-size: 6px;
+                display: flex;
+                /* Enable Flexbox */
+                justify-content: center;
+                /* Aligns text horizontally (center) */
+                align-items: center;
+                /* Aligns text vertically (center) */
+                text-align: center;
             }
         }
     </style>
@@ -196,7 +312,6 @@
 <body>
 
     <h1>Cybersecurity Defense Game</h1>
-    <p>Drag and drop the bombs near threats to destroy them!</p>
 
     <div class="score" id="score">Score: 0</div>
     <div class="health" id="health">Health: 100</div>
