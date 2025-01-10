@@ -53,6 +53,9 @@ bombs.forEach((bomb) => {
         top: bomb.style.top,
     };
 
+    // Track the initial offset of the bomb
+    let bombOffset = { x: 0, y: 0 };
+
     // Desktop: Handle dragstart
     bomb.addEventListener('dragstart', (e) => {
         e.dataTransfer.setData('text/plain', bomb.id);
@@ -62,20 +65,29 @@ bombs.forEach((bomb) => {
     bomb.addEventListener('touchstart', (e) => {
         e.preventDefault();
         const touch = e.touches[0];
+
+        // Calculate the initial offset
+        bombOffset = {
+            x: touch.pageX - bomb.offsetLeft,
+            y: touch.pageY - bomb.offsetTop,
+        };
+
         bomb.style.position = 'absolute';
         bomb.style.zIndex = '1000';
 
+        // Move bomb with touch
         function moveAt(pageX, pageY) {
-            bomb.style.left = `${pageX - bomb.offsetWidth / 2}px`;
-            bomb.style.top = `${pageY - bomb.offsetHeight / 2}px`;
+            bomb.style.left = `${pageX - bombOffset.x}px`;
+            bomb.style.top = `${pageY - bombOffset.y}px`;
         }
 
         moveAt(touch.pageX, touch.pageY);
 
+        // Mobile drag event
         function onTouchMove(event) {
             const touch = event.touches[0];
             moveAt(touch.pageX, touch.pageY);
-            event.preventDefault();
+            event.preventDefault(); // Prevent scrolling
         }
 
         document.addEventListener('touchmove', onTouchMove);
@@ -118,9 +130,9 @@ function handleBombDrop(bomb, clientX, clientY) {
     const explosionX = clientX - gameRect.left - 60; // Center explosion on drop point
     const explosionY = clientY - gameRect.top - 60;
 
-    // Play the bomb sound effect
-    bombSound.currentTime = 0; // Reset the sound to allow multiple plays
-    bombSound.play();
+    // Play the bomb sound effect (ensure it works on mobile)
+    bombSound.currentTime = 0; // Reset sound to allow multiple plays
+    bombSound.play().catch((err) => console.log("Error playing sound:", err));
 
     // Create explosion effect
     const explosion = document.createElement('div');
