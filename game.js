@@ -60,6 +60,7 @@ bombs.forEach((bomb) => {
 
     // Mobile: Handle touchstart
     bomb.addEventListener('touchstart', (e) => {
+        e.preventDefault();
         const touch = e.touches[0];
         bomb.style.position = 'absolute';
         bomb.style.zIndex = '1000';
@@ -74,6 +75,7 @@ bombs.forEach((bomb) => {
         function onTouchMove(event) {
             const touch = event.touches[0];
             moveAt(touch.pageX, touch.pageY);
+            event.preventDefault();
         }
 
         document.addEventListener('touchmove', onTouchMove);
@@ -150,7 +152,7 @@ function handleBombDrop(bomb, clientX, clientY) {
         ) {
             if (
                 (bomb.id === 'antivirus-bomb' && threat.classList.contains('malware')) ||
-                (bomb.id === 'phishing-bomb' && threat.classList.contains('phishing')) ||
+                (bomb.id === 'training-bomb' && threat.classList.contains('phishing')) ||
                 (bomb.id === 'firewall-bomb' && threat.classList.contains('ddos'))
             ) {
                 score += 10;
