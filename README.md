@@ -23,3 +23,20 @@ A fun and interactive game where players drag and drop bombs to eliminate cybers
 - **Responsive Design:** Play seamlessly on desktop or mobile devices.
 
 ---
+
+
+---
+
+## 🌐 Play the Game
+Click the link below to play the game:
+[Play Cybersecurity Defense Game](https://riz564.github.io/cybersecurity-defense-game/defense.html)
+
+Or scan the QR code to access it directly:
+
+![QR Code](./cybersecurity_game_qr.png)
+
+---
+
+## 📜 License
+This project is open-source and licensed under the MIT License.
+
