@@ -28,7 +28,7 @@ function createThreats() {
         }, 30);
 
         threat.fallInterval = fallInterval;
-    }, 1000); // Threat spawns every 1 second
+    }, 1500); // Threat spawns every 1 second
 }
 
 // Update health
