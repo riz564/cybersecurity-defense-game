@@ -21,12 +21,14 @@ function createThreats() {
             if (currentTop >= gameContainer.offsetHeight - 60) {
                 clearInterval(fallInterval);
                 threat.remove(); // Remove threat if it reaches the bottom
-                updateHealth(-2); // Reduce health if threat is missed
+                updateHealth(-10); // Reduce health if threat is missed
             } else {
                 threat.style.top = `${currentTop + 3}px`; // Slower falling speed
             }
         }, 30);
-    }, 2500); // Threat spawns every 2.5 seconds
+
+        threat.fallInterval = fallInterval;
+    }, 1000); // Threat spawns every 1 second
 }
 
 // Update health
@@ -153,6 +155,8 @@ function handleBombDrop(bomb, clientX, clientY) {
             ) {
                 score += 10;
                 scoreElement.textContent = `Score: ${score}`;
+
+                clearInterval(threat.fallInterval);
                 threat.remove();
             }
         }
