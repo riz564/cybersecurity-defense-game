@@ -5,7 +5,7 @@ A fun and interactive game where players drag and drop bombs to eliminate cybers
 ---
 
 ## 🚀 How to Play
-1. **Drag and Drop:** Select a bomb (Antivirus, Phishing, Firewall) and drag it near the matching threat.
+1. **Drag and Drop:** Select a bomb (Antivirus, Training, Firewall) and drag it near the matching threat.
 2. **Destroy Threats:** Drop the bomb to create an explosion and eliminate threats within its range.
 3. **Score Points:** Each successful match earns you 10 points.
 4. **Health:** Watch out! Letting threats reach the bottom will decrease your health.
@@ -17,7 +17,7 @@ A fun and interactive game where players drag and drop bombs to eliminate cybers
 - **Interactive Gameplay:** Real-time drag-and-drop mechanics.
 - **Three Bomb Types:** 
   - Antivirus: Targets malware threats.
-  - Phishing: Targets phishing threats.
+  - Training: Targets phishing threats.
   - Firewall: Targets DDoS threats.
 - **Dynamic Threats:** New threats spawn randomly and fall toward the bottom of the screen.
 - **Responsive Design:** Play seamlessly on desktop or mobile devices.
