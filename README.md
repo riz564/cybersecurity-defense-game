@@ -16,9 +16,21 @@ A fun and interactive game where players drag and drop bombs to eliminate cybers
 ## 🌟 Features
 - **Interactive Gameplay:** Real-time drag-and-drop mechanics.
 - **Three Bomb Types:** 
-  - Antivirus: Targets malware threats.
-  - Training: Targets phishing threats.
-  - Firewall: Targets DDoS threats.
+  - **Antivirus**: Targets threats like:
+      - **Malware**
+      - **Ransomware**
+      - **Trojans**
+      - **Worms**
+  - **Web App Firewall(WAF)**: Targets threats like:
+      - **Sql Injection(Sql-Inj)**
+      - **Cross Site Scripting(CSS)**
+      - **Distributed Denial of Service(DDOS)**
+      - **Remote File Inclusion(RFI)**
+  - **Bot Manager**: Targets threats like:
+      - **Brute-Force(Brute_f)**
+      - **Scraping**
+      - **Zombies**
+      - **Account Takeover(ATO)**
 - **Dynamic Threats:** New threats spawn randomly and fall toward the bottom of the screen.
 - **Responsive Design:** Play seamlessly on desktop or mobile devices.
 
@@ -29,7 +41,7 @@ A fun and interactive game where players drag and drop bombs to eliminate cybers
 
 ## 🌐 Play the Game
 Click the link below to play the game:
-[Play Cybersecurity Defense Game](https://riz564.github.io/cybersecurity-defense-game/defense.html)
+[Play Cybersecurity Defense Game](https://riz564.github.io/cybersecurity-defense-game/login.html)
 
 Or scan the QR code to access it directly:
 
