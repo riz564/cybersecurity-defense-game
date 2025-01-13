@@ -45,7 +45,7 @@ Click the link below to play the game:
 
 Or scan the QR code to access it directly:
 
-![QR Code](./qr_code.png)
+![QR Code](./qr-code.png)
 
 ---
 
