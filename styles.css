@@ -5,7 +5,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+  background: url("background1.jpg") no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the full screen */
   color: white;
 }
 
@@ -24,6 +25,33 @@ p {
   font-size: 1.2em;
   margin-bottom: 20px;
   color: #e0e0e0;
+}
+
+/* Username Input Container */
+.username-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.username-container input {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.username-container button {
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Display Username */
+.username-display {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #f5d547;
 }
 
 /* Score and Health */
@@ -78,13 +106,13 @@ p {
   left: 20%;
 }
 
-.training-bomb {
-  background: linear-gradient(135deg, #f39c12, #e67e22);
+.waf-bomb {
+  background: linear-gradient(135deg, #3498db, #2980b9); /* Blue Gradient */
   left: 40%;
 }
 
-.firewall-bomb {
-  background: linear-gradient(135deg, #8e44ad, #9b59b6);
+.botmanager-bomb {
+  background: linear-gradient(135deg, #e74c3c, #c0392b); /* Red Gradient */
   left: 60%;
 }
 
@@ -95,11 +123,21 @@ p {
   height: 50px;
   border-radius: 50%;
   text-align: center;
-  line-height: 50px;
-  font-size: 0.8em;
+  line-height: 50px; /* This ensures the text is centered vertically in the circle */
+  font-size: 0.8em; /* Adjust font size to fit inside the circle */
   font-weight: bold;
   animation: shake 1.5s infinite;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Default text color for better contrast */
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8), 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Optional: Adjust text size dynamically based on the size of the threat */
+.threat span {
+  font-size: 12px; /* Adjust the font size here as needed */
 }
 
 .malware {
@@ -213,13 +251,25 @@ p {
   }
 
   .threat {
+    position: absolute;
     width: 30px;
     height: 30px;
-    font-size: 6px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px; /* This ensures the text is centered vertically in the circle */
+    font-size: 0.6em; /* Adjust font size to fit inside the circle */
+    font-weight: bold;
+    animation: shake 1.5s infinite;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    color: white; /* Default text color for better contrast */
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8), 0px 0px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  .threat span {
+    font-size: 6px; /* Adjust the font size here as needed */
   }
 }
 
@@ -261,12 +311,24 @@ p {
   }
 
   .threat {
+    position: absolute;
     width: 30px;
     height: 30px;
-    font-size: 6px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px; /* This ensures the text is centered vertically in the circle */
+    font-size: 0.6em; /* Adjust font size to fit inside the circle */
+    font-weight: bold;
+    animation: shake 1.5s infinite;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    color: white; /* Default text color for better contrast */
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8), 0px 0px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  .threat span {
+    font-size: 6px; /* Adjust the font size here as needed */
   }
 }
