@@ -45,7 +45,7 @@ Click the link below to play the game:
 
 Or scan the QR code to access it directly:
 
-![QR Code](./cybersecurity_defense_game_qr.png)
+![QR Code](./qr_code.png)
 
 ---
 
