@@ -1,6 +1,6 @@
 # Cybersecurity Defense Game
 
-A fun and interactive game where players drag and drop bombs to eliminate cybersecurity threats like malware, phishing, and DDoS attacks. Test your reflexes and knowledge of cybersecurity in this engaging defense game!
+A fun and interactive game where players drag and drop bombs to eliminate cybersecurity threats. Test your reflexes and knowledge of cybersecurity in this engaging defense game!
 
 ---
 
