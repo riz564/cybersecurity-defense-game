@@ -12,8 +12,68 @@
     <div class="username-box">
         <h2>Cybersecurity Defense Game</h2>
         <input type="text" id="username" placeholder="Step Into the Cyber Arena – What's Your Alias?" />
-        <button onclick="setUsername()">Submit</button>
+        <button onclick="setUsername()">Let's Defend</button>
     </div>
+    <div class="instructions-section">
+        <h2>🚀 How to Play</h2>
+        <p>
+            A fun and interactive game where players drag and drop bombs to eliminate cybersecurity threats like
+            <b>Malware</b>, <b>Phishing</b>, and <b>DDoS attacks</b>. Test your reflexes and knowledge in this engaging
+            game!
+        </p>
+
+        <h3>🎯 Steps:</h3>
+        <ol>
+            <li><b>Drag and Drop:</b> Select a bomb (Antivirus, Training, Firewall) and drag it near the matching
+                threat.</li>
+            <li><b>Destroy Threats:</b> Drop the bomb to create an explosion and eliminate threats within its range.
+            </li>
+            <li><b>Score Points:</b> Each successful match earns you 10 points.</li>
+            <li><b>Health:</b> Letting threats reach the bottom decreases health by 20%.</li>
+            <li><b>Game Over:</b> The game ends when your health reaches 0%.</li>
+        </ol>
+
+        <h3>🌟 Features:</h3>
+        <ul>
+            <li><b>Three Bomb Types:</b>
+                <ul>
+                    <li><b>Antivirus:</b>
+                        Targets threats like:
+                        <ul>
+                            <li>Malware</li>
+                            <li>Ransomware</li>
+                            <li>Trojan</li>
+                            <li>Worms</li>
+                        </ul>
+
+                    </li>
+                    <li><b>WAF:</b>
+                        Targets threats like:
+                        <ul>
+                            <li>Sql Injection(SQLi)</li>
+                            <li>Cross Site Scripting(XSS)</li>
+                            <li>Distributed Denial of Service(DDoS)</li>
+                            <li>Server Side Request Forgery(SSRF)</li>
+                        </ul>
+
+                    </li>
+                    <li><b>Bot Manager:</b>
+                        Targets threats like:
+                        <ul>
+                            <li>SpamBot</li>
+                            <li>Scraping</li>
+                            <li>Botnet</li>
+                            <li>Account Takeover(ATO)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    </div>
+
 
     <script>
         function setUsername() {
