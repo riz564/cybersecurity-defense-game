@@ -4,13 +4,13 @@ const healthElement = document.getElementById('health');
 let score = 0;
 let health = 100;
 let fallSpeed = 3; // Initial threat falling speed
-let spawnInterval = 1000; // Initial spawn interval in milliseconds
+let spawnInterval = 2000; // Initial spawn interval in milliseconds
 
 // Countermeasures and threats
 const countermeasures = {
-    "WAF": ["Sql-Inj", "XSS", "DDOS", "RFI"],
-    "Antivirus": ["Malware", "Ransomware", "Trojans", "Worms"],
-    "Bot-M": ["Brute-F", "Scraping", "Zombies", "ATO"],
+    "WAF": ["SQLi", "XSS", "DDoS", "SSRF"],
+    "Antivirus": ["Malware", "Ransomware", "Trojan", "Worms"],
+    "Bot-Mgr": ["SpamBot", "Scraping", "Botnet", "ATO"],
 };
 
 
@@ -146,6 +146,9 @@ function updateScore(points) {
         score += points;
     }
     scoreElement.textContent = `Score: ${score}`;
+    if (score % 100 === 0) {
+        increaseGameSpeed();
+    }
 }
 
 function updateHealth(amount) {
