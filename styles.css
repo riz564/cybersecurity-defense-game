@@ -26,6 +26,58 @@ p {
   margin-bottom: 20px;
   color: #e0e0e0;
 }
+.instructions-section {
+  background-color: #222831; /* Dark background */
+  color: #eeeeee; /* Light text for contrast */
+  padding: 30px; /* Adds spacing from all sides */
+  border-radius: 10px; /* Smooth corners */
+  margin: 20px 0; /* Spacing above and below the section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  width: 80%;
+}
+
+.instructions-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #00adb5; /* Highlighted title */
+}
+
+.instructions-section h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #00adb5; /* Sub-heading color */
+}
+
+.instructions-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.instructions-section ol,
+.instructions-section ul {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.instructions-section ol li,
+.instructions-section ul li {
+  margin-bottom: 15px;
+}
+
+.instructions-section ul ul {
+  margin-left: 20px;
+}
+
+.instructions-section li {
+  list-style-type: disc;
+}
+
+.instructions-section ol li {
+  list-style-type: decimal;
+}
 
 /* Box Container for Username and Submit */
 .username-box {
@@ -406,6 +458,10 @@ p {
   .game-over-box button {
     padding: 8px 16px; /* Smaller button size on mobile */
     font-size: 0.9em; /* Adjust font size of the button */
+  }
+  .instructions p,
+  .instructions ul {
+    font-size: 16px;
   }
 }
 
