@@ -4,7 +4,7 @@ const healthElement = document.getElementById('health');
 let score = 0;
 let health = 100;
 let fallSpeed = 3; // Initial threat falling speed
-let spawnInterval = 2000; // Initial spawn interval in milliseconds
+let spawnInterval = 1000; // Initial spawn interval in milliseconds
 
 // Countermeasures and threats
 const countermeasures = {
@@ -53,7 +53,7 @@ function createThreats() {
             if (currentTop >= gameContainer.offsetHeight - 60) {
                 clearInterval(fallInterval);
                 threat.remove();
-                updateHealth(-10); // Reduce health if threat reaches the bottom
+                updateHealth(-20); // Reduce health if threat reaches the bottom
             } else {
                 threat.style.top = `${currentTop + fallSpeed}px`;
             }
@@ -150,7 +150,7 @@ function updateScore(points) {
 
 function updateHealth(amount) {
     health += amount;
-    healthElement.textContent = `Health: ${health}`;
+    healthElement.textContent = `Health: ${health}%`;
     if (health <= 0) {
         const username = localStorage.getItem("username") || "Player"; // Retrieve username
         showGameOverScreen(username, score); // Call a function to display the Game Over screen
