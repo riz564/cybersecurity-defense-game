@@ -227,7 +227,7 @@ function handleBombDrop(bombElement, clientX, clientY) {
             if (
                 (bombElement && bombElement.id === 'antivirus-bomb' && threat.classList.contains('Antivirus')) ||
                 (bombElement && bombElement.id === 'waf-bomb' && threat.classList.contains('WAF')) ||
-                (bombElement && bombElement.id === 'botmanager-bomb' && threat.classList.contains('Bot-M'))
+                (bombElement && bombElement.id === 'botmanager-bomb' && threat.classList.contains('Bot-Mgr'))
             ) {
                 // Correct bomb hit
                 clearInterval(threat.fallInterval);
