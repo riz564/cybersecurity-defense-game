@@ -8,7 +8,7 @@ let spawnInterval = 1000; // Initial spawn interval in milliseconds
 
 // Countermeasures and threats
 const countermeasures = {
-    "WAF": ["Sql-Inj", "CSS", "DDOS", "RFI"],
+    "WAF": ["Sql-Inj", "XSS", "DDOS", "RFI"],
     "Antivirus": ["Malware", "Ransomware", "Trojans", "Worms"],
     "Bot-M": ["Brute-F", "Scraping", "Zombies", "ATO"],
 };
