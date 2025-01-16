@@ -7,7 +7,7 @@ A fun and interactive game where players drag and drop bombs to eliminate cybers
 ## 🚀 How to Play
 1. **Drag and Drop:** Select a bomb (Antivirus, Training, Firewall) and drag it near the matching threat.
 2. **Destroy Threats:** Drop the bomb to create an explosion and eliminate threats within its range.
-3. **Score Points:** Each successful match earns you 10 points.
+3. **Score Points:** Each successful match earns you 10 points. On multiple of 100 score game level increases.
 4. **Health:** Watch out! Letting threats reach the bottom will decrease health by 20% which is 100% at start.
 5. **Game Over:** The game ends when your health reaches 0.
 
@@ -19,17 +19,17 @@ A fun and interactive game where players drag and drop bombs to eliminate cybers
   - **Antivirus**: Targets threats like:
       - **Malware**
       - **Ransomware**
-      - **Trojans**
+      - **Trojan**
       - **Worms**
   - **Web App Firewall(WAF)**: Targets threats like:
-      - **Sql Injection(Sql-Inj)**
+      - **Sql Injection(SQLi)**
       - **Cross Site Scripting(XSS)**
-      - **Distributed Denial of Service(DDOS)**
-      - **Remote File Inclusion(RFI)**
-  - **Bot Manager**: Targets threats like:
-      - **Brute-Force(Brute_f)**
+      - **Distributed Denial of Service(DDoS)**
+      - **Server Side Request Forgery(SSRF)**
+  - **Bot Manager(Bot-Mgr)**: Targets threats like:
+      - **SpamBot**
       - **Scraping**
-      - **Zombies**
+      - **Botnet**
       - **Account Takeover(ATO)**
 - **Dynamic Threats:** New threats spawn randomly and fall toward the bottom of the screen.
 - **Responsive Design:** Play seamlessly on desktop or mobile devices.
