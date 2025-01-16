@@ -23,7 +23,7 @@ A fun and interactive game where players drag and drop bombs to eliminate cybers
       - **Worms**
   - **Web App Firewall(WAF)**: Targets threats like:
       - **Sql Injection(Sql-Inj)**
-      - **Cross Site Scripting(CSS)**
+      - **Cross Site Scripting(XSS)**
       - **Distributed Denial of Service(DDOS)**
       - **Remote File Inclusion(RFI)**
   - **Bot Manager**: Targets threats like:
