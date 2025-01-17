@@ -10,7 +10,7 @@
 
 <body>
     <div class="username-box">
-        <h2>Cybersecurity Defense Game</h2>
+        <h2>Cyber Defense Game</h2>
         <input type="text" id="username" placeholder="Step Into the Cyber Arena – What's Your Alias?" />
         <button onclick="setUsername()">Let's Defend</button>
     </div>
@@ -34,37 +34,28 @@
 
         <h3>🌟 Features:</h3>
         <ul>
-            <li><b>Three Bomb Types:</b>
+            <li><b>Counter Measure of Attacks: Three Defensive Bomb Types which will target all attacks</b>
                 <ul>
-                    <li><b>Antivirus:</b>
-                        Targets threats like:
-                        <ul>
-                            <li>Malware</li>
-                            <li>Ransomware</li>
-                            <li>Trojan</li>
-                            <li>Worms</li>
-                        </ul>
-
-                    </li>
-                    <li><b>WAF:</b>
-                        Targets threats like:
-                        <ul>
-                            <li>Sql Injection(SQLi)</li>
-                            <li>Cross Site Scripting(XSS)</li>
-                            <li>Distributed Denial of Service(DDoS)</li>
-                            <li>Server Side Request Forgery(SSRF)</li>
-                        </ul>
-
-                    </li>
-                    <li><b>Bot Manager:</b>
-                        Targets threats like:
-                        <ul>
-                            <li>SpamBot</li>
-                            <li>Scraping</li>
-                            <li>Botnet</li>
-                            <li>Account Takeover(ATO)</li>
-                        </ul>
-                    </li>
+                    <li><b>Antivirus</b></li>
+                    <li><b>WAF</b></li>
+                    <li><b>Bot Manager:</b></li>
+                </ul>
+            </li>
+            <li><b>Dynamic Threats: Twelve Different types of attack spawn randomly and fall toward the bottom of the
+                    screen</b>
+                <ul>
+                    <li>Malware</li>
+                    <li>Ransomware</li>
+                    <li>Trojan</li>
+                    <li>Worms</li>
+                    <li>SpamBot</li>
+                    <li>Scraping</li>
+                    <li>Botnet</li>
+                    <li>Account Takeover(ATO)</li>
+                    <li>Sql Injection(SQLi)</li>
+                    <li>Cross Site Scripting(XSS)</li>
+                    <li>Distributed Denial of Service(DDoS)</li>
+                    <li>Server Side Request Forgery(SSRF)</li>
                 </ul>
             </li>
         </ul>
@@ -72,8 +63,6 @@
 
 
     </div>
-
-
     <script>
         function setUsername() {
             const username = document.getElementById("username").value;
