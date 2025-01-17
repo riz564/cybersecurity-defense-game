@@ -19,20 +19,19 @@ A fun and interactive game where players drag and drop bombs to eliminate cybers
   1. **Antivirus**
   2. **Web App Firewall(WAF)**: Targets threats like:
   3. **Bot Manager(Bot-Mgr)**: Targets threats like:
-- **Dynamic Threats:Twelve Different types of attack spawn randomly and fall toward the bottom of the screen** 
-      - **Malware**
-      - **Ransomware**
-      - **Trojan**
-      - **Worms**
-      - **SpamBot**
-      - **Scraping**
-      - **Botnet**
-      - **Account Takeover(ATO)**
-      - **Sql Injection(SQLi)**
-      - **Cross Site Scripting(XSS)**
-      - **Distributed Denial of Service(DDoS)**
-      - **Server Side Request Forgery(SSRF)**
-
+- **Dynamic Threats:Twelve Different types of attack spawn randomly and fall toward the bottom of the screen**
+  1. **Malware**
+  2. **Ransomware**
+  3. **Trojan**
+  4. **Worms**
+  5. **SpamBot**
+  6. **Scraping**
+  7. **Botnet**
+  8. **Account Takeover(ATO)**
+  9. **Sql Injection(SQLi)**
+  10. **Cross Site Scripting(XSS)**
+  11. **Distributed Denial of Service(DDoS)**
+  12. **Server Side Request Forgery(SSRF)**
 ---
 
 
