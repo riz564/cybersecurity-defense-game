@@ -15,24 +15,23 @@ A fun and interactive game where players drag and drop bombs to eliminate cybers
 
 ## 🌟 Features
 - **Interactive Gameplay:** Real-time drag-and-drop mechanics.
-- **Three Bomb Types:** 
-  - **Antivirus**: Targets threats like:
+- **Counter Measure of Attacks: Three Defensive Bomb Types which will target all attacks:** 
+  1. **Antivirus**
+  2. **Web App Firewall(WAF)**: Targets threats like:
+  3. **Bot Manager(Bot-Mgr)**: Targets threats like:
+- **Dynamic Threats:Twelve Different types of attack spawn randomly and fall toward the bottom of the screen** 
       - **Malware**
       - **Ransomware**
       - **Trojan**
       - **Worms**
-  - **Web App Firewall(WAF)**: Targets threats like:
-      - **Sql Injection(SQLi)**
-      - **Cross Site Scripting(XSS)**
-      - **Distributed Denial of Service(DDoS)**
-      - **Server Side Request Forgery(SSRF)**
-  - **Bot Manager(Bot-Mgr)**: Targets threats like:
       - **SpamBot**
       - **Scraping**
       - **Botnet**
       - **Account Takeover(ATO)**
-- **Dynamic Threats:** New threats spawn randomly and fall toward the bottom of the screen.
-- **Responsive Design:** Play seamlessly on desktop or mobile devices.
+      - **Sql Injection(SQLi)**
+      - **Cross Site Scripting(XSS)**
+      - **Distributed Denial of Service(DDoS)**
+      - **Server Side Request Forgery(SSRF)**
 
 ---
 
