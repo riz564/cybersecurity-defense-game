@@ -17,8 +17,8 @@ A fun and interactive game where players drag and drop bombs to eliminate cybers
 - **Interactive Gameplay:** Real-time drag-and-drop mechanics.
 - **Counter Measure of Attacks: Three Defensive Bomb Types which will target all attacks:** 
   1. **Antivirus**
-  2. **Web App Firewall(WAF)**: Targets threats like:
-  3. **Bot Manager(Bot-Mgr)**: Targets threats like:
+  2. **Web App Firewall(WAF)**
+  3. **Bot Manager(Bot-Mgr)**
 - **Dynamic Threats:Twelve Different types of attack spawn randomly and fall toward the bottom of the screen**
   1. **Malware**
   2. **Ransomware**
