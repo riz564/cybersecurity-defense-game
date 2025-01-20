@@ -183,6 +183,7 @@ p {
   color: white;
   text-align: center;
   line-height: 80px;
+  font-size: 1em;
   font-weight: bold;
   border-radius: 50%;
   user-select: none;
@@ -220,7 +221,7 @@ p {
   border-radius: 50%;
   text-align: center;
   line-height: 50px; /* This ensures the text is centered vertically in the circle */
-  font-size: 0.8em; /* Adjust font size to fit inside the circle */
+  font-size: 1em; /* Adjust font size to fit inside the circle */
   font-weight: bold;
   animation: shake 1.5s infinite;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
@@ -233,7 +234,7 @@ p {
 
 /* Optional: Adjust text size dynamically based on the size of the threat */
 .threat span {
-  font-size: 12px; /* Adjust the font size here as needed */
+  font-size: 1em; /* Adjust the font size here as needed */
 }
 
 .malware {
@@ -408,7 +409,7 @@ p {
     width: 40px;
     height: 40px;
     line-height: 50px;
-    font-size: 7px;
+    font-size: 0.8em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -427,7 +428,7 @@ p {
     border-radius: 50%;
     text-align: center;
     line-height: 30px; /* This ensures the text is centered vertically in the circle */
-    font-size: 0.6em; /* Adjust font size to fit inside the circle */
+    font-size: 0.8em; /* Adjust font size to fit inside the circle */
     font-weight: bold;
     animation: shake 1.5s infinite;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
@@ -439,7 +440,7 @@ p {
   }
 
   .threat span {
-    font-size: 6px; /* Adjust the font size here as needed */
+    font-size: 0.5em; /* Adjust the font size here as needed */
   }
   .game-over-box {
     width: 80%; /* Reduce width on mobile */
@@ -509,7 +510,7 @@ p {
     width: 40px;
     height: 40px;
     line-height: 50px;
-    font-size: 7px;
+    font-size: 0.8em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -528,7 +529,7 @@ p {
     border-radius: 50%;
     text-align: center;
     line-height: 30px; /* This ensures the text is centered vertically in the circle */
-    font-size: 0.6em; /* Adjust font size to fit inside the circle */
+    font-size: 0.8em; /* Adjust font size to fit inside the circle */
     font-weight: bold;
     animation: shake 1.5s infinite;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
@@ -540,7 +541,7 @@ p {
   }
 
   .threat span {
-    font-size: 6px; /* Adjust the font size here as needed */
+    font-size: 0.5em; /* Adjust the font size here as needed */
   }
   .game-over-box {
     width: 85%; /* Further reduce width for very small screens */
