@@ -216,8 +216,8 @@ p {
 /* Threat Styling */
 .threat {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   text-align: center;
   line-height: 50px; /* This ensures the text is centered vertically in the circle */
@@ -406,8 +406,8 @@ p {
   }
 
   .bomb {
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     line-height: 50px;
     font-size: 0.8em;
     display: flex;
@@ -423,8 +423,8 @@ p {
 
   .threat {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     text-align: center;
     line-height: 30px; /* This ensures the text is centered vertically in the circle */
@@ -507,8 +507,8 @@ p {
   }
 
   .bomb {
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     line-height: 50px;
     font-size: 0.8em;
     display: flex;
@@ -524,8 +524,8 @@ p {
 
   .threat {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     text-align: center;
     line-height: 30px; /* This ensures the text is centered vertically in the circle */
