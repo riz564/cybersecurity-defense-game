@@ -11,8 +11,25 @@
 
 <body>
     <div class="game-over-box">
-        <h1>Thanks for Playing!!!</h1>
+        <h1>Thanks for Playing, <span class="highlight" id="username-display"></span>!</h1>
+        <p>Your final score: <span class="highlight" id="score-display"></span></p>
+
+        <!-- Catchy message for screenshot -->
+        <p class="catchy-message">Take a screenshot to remember your victorious moment! 📸</p>
     </div>
+
+    <script>
+        // Display username and score from localStorage
+        const username = localStorage.getItem("username") || "Player";
+        const score = localStorage.getItem("score") || "0";
+
+        // Update HTML content with username and score
+        document.getElementById("username-display").textContent = username;
+        document.getElementById("score-display").textContent = score;
+
+        localStorage.removeItem("username");
+        localStorage.removeItem("score");
+    </script>
 </body>
 
 </html>
