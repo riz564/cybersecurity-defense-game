@@ -13,7 +13,6 @@ const countermeasures = {
     "Bot-Mgr": ["SpamBot", "Scraping", "Botnet", "ATO"],
 };
 
-
 // Threat spawning
 function createThreats() {
     setInterval(() => {
@@ -171,7 +170,7 @@ function showGameOverScreen(username, score) {
             <h1>Game Over!</h1>
             <p>Great effort, <span class="highlight">${username}</span>!</p>
             <p>Your final score: <span class="highlight">${score}</span></p>
-            <button onclick="restartGame()">Restart</button>
+            <button onclick="endGame()">Ok</button>
         </div>
     `;
 
@@ -179,10 +178,9 @@ function showGameOverScreen(username, score) {
     document.body.appendChild(overlay);
 }
 
-function restartGame() {
-    window.location.href = "login.html"; // Redirect to the login page
+function endGame() {
+    window.location.href = "gameover.html";
 }
-
 
 function handleBombDrop(bombElement, clientX, clientY) {
     const gameRect = gameContainer.getBoundingClientRect(); // Accurate positioning
