@@ -170,7 +170,7 @@ function showGameOverScreen(username, score) {
             <h1>Game Over!</h1>
             <p>Great effort, <span class="highlight">${username}</span>!</p>
             <p>Your final score: <span class="highlight">${score}</span></p>
-            <button onclick="endGame()">Ok</button>
+            <button onclick="endGame('${username}', ${score})">Ok</button>
         </div>
     `;
 
@@ -178,7 +178,9 @@ function showGameOverScreen(username, score) {
     document.body.appendChild(overlay);
 }
 
-function endGame() {
+function endGame(username, score) {
+    localStorage.setItem("username", username);
+    localStorage.setItem("score", score);
     window.location.href = "gameover.html";
 }
 
