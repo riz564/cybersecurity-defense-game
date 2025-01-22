@@ -460,7 +460,7 @@ p {
   }
 
   .game-over-box p {
-    font-size: 1.1em; /* Smaller text for mobile */
+    font-size: 1.2em;
   }
 
   .game-over-box button {
@@ -560,7 +560,7 @@ p {
   }
 
   .game-over-box p {
-    font-size: 0.9em; /* Smaller text for very small screens */
+    font-size: 1.2em;
   }
 
   .game-over-box button {
