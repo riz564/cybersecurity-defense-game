@@ -15,18 +15,27 @@
         <p>Your final score: <span class="highlight" id="score-display"></span></p>
 
         <!-- Catchy message for screenshot -->
-        <p class="catchy-message">Take a screenshot to remember your victorious moment! 📸</p>
+        <p class="catchy-message" id="message-display"></p>
     </div>
 
     <script>
         // Display username and score from localStorage
         const username = localStorage.getItem("username") || "Player";
-        const score = localStorage.getItem("score") || "0";
+        const score = parseInt(localStorage.getItem("score")) || 0;
 
         // Update HTML content with username and score
         document.getElementById("username-display").textContent = username;
         document.getElementById("score-display").textContent = score;
 
+        // Add logic to display the message based on the score
+        const messageDisplay = document.getElementById("message-display");
+        if (score >= 400) {
+            messageDisplay.textContent = "Great defense! You've earned some goodies—capture this victorious moment! 📸";
+        } else {
+            messageDisplay.textContent = "Too bad! You couldn't defend most attacks—no goodies this time.";
+        }
+
+        // Remove localStorage items
         localStorage.removeItem("username");
         localStorage.removeItem("score");
     </script>
