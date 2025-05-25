@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cybersecurity-defense-game
+  labels:
+    app: cybersecurity-defense-game
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cybersecurity-defense-game
+  template:
+    metadata:
+      labels:
+        app: cybersecurity-defense-game
+    spec:
+      containers:
+      - name: cybersecurity-defense-game
+        image: 485067906330.dkr.ecr.us-east-1.amazonaws.com/cybersecurity-defense-game:latest
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: ecr-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cybersecurity-defense-game-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: cybersecurity-defense-game
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
